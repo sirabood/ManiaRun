@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+  	  <body bgcolor="#141414" >
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Test</title>
@@ -13,13 +14,115 @@
     </script>
   </head>
   <body>
-    <div class="webgl-content">
+  <center>
+  <head>
+  <table>
+    <tr>
+    </td>
+    <td>
+     <br>
+     <style>
+     body {
+      margin: 0;
+      font-family: Aller;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 44px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+
+  </style>
+  </center>
+</head>
+<div class="topnav">
+  <a href="https://www.facebook.com/groups/678960246251251/?ref=share"  style=" width: 85px; height:20px "target="_blank">Group</a>
+  <a href="https://mohanedhassan512.wixsite.com/mania-run-teamlist?fbclid=IwAR1NrA6vllA_WPxo2NpJqV7IeXLsuNtCkFFhR_8Jvjkv1Gkf_q1Tsp1Kc-s" style=" width: 90px; height:20px" target="_blank">Homepage</a>
+  <a  style=" width: 120px; height:20px" target="_blank">Discord</a>
+  <a href="https://www.termsfeed.com/live/65d95523-05e7-4223-9873-5c8edc4bb7b2?fbclid=IwAR1jnT4SOhsJycv78izNiYNnm9D6dYwbl6UuRATjGxUezOIO3Z4sry5bKRU"  style=" width: 150px; height:20px" target="_blank">Privacy Policy</a>
+</div>
+
+</td>
+
+</tr>
+
+</table>
+<table width="700" border="0">
+<center>
+ <div class="webgl-content">
+ </center>
       <div id="unityContainer" style="width: 800px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-		<div><a href="https://mohanedhassan512.wixsite.com/mania-run-teamlist?fbclid=IwAR1NrA6vllA_WPxo2NpJqV7IeXLsuNtCkFFhR_8Jvjkv1Gkf_q1Tsp1Kc-s" target="_blank"><img src="TemplateData/team.jpg" align="center"></a></div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade" style="display: none;">
+                    <div class="numbertext"></div>
+                    <a target="_blank"><img src="TemplateData/STOP.png" weight="760" height="100" style="
+                      width: 800px;" </a>
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade" style="display: block;">
+                    <div class="numbertext"></div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSGCCMQt2u5oFUaGiDaiFbjdfyLsd6rIbACwSL5ArrQVmQwQ/viewform" target="_blank"><img src="TemplateData/HELPER.png" weight="760" height="100" style="
+                     width: 800px;"</a>
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade" style="display: none;">
+                    <div class="numbertext"></div>
+                    <a target="_blank"><img src="TemplateData/WARN.png" weight="760" height="100" style="
+                     width: 800px;"</a>
+                    <div class="text"></div>
+                </div>
+            </div>
+
+            <div style="text-align: left">
+                <span class="dot"></span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
       </div>
+	<br>
+    <br>
+    <script>
+	    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 10000); // Change image every 10 seconds
+    }
+    </script>
+
     </div>
   </body>
 </html>
